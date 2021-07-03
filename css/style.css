@@ -1,0 +1,875 @@
+/* Generral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+    --prim: rgb(255, 255, 255);
+    --sec: #c6b089;
+    --prag: #272727;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    font-weight: 100;
+    color: var(--prim);
+}
+p{
+    color:var(--prag);
+    font-size: 14px;
+    font-weight: 300;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* herosection */
+#heroSection{
+    background-image: url(../images/restaurant_title_bg.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar_logo{
+    width: 15%;
+}
+.navbar_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+    margin-bottom: 0;
+    position: relative;
+}
+.navbar_links li{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 10px;
+}
+.navbar_links a:link {
+    color: var(--prim);
+}
+
+.navbar_links a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  .navbar_links a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  .navbar_links a:active {
+    color: red;
+  }
+.navbar_links li:first-child{
+    padding: 4px 8px;
+    border: solid white 2px;
+}
+.nav_burger{
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 24px;
+    position: absolute;
+    right: 5%;
+}
+.nav_burger i:hover{
+    color: red;
+}
+/* header */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    text-align: center;
+}
+.header_pic1{
+    width: 30%;
+    margin: 40px auto;
+}
+h1{
+    font-size: 48px;
+    font-weight: 300;
+}
+h1 > span{
+    margin: 16px;
+    font-size: 12px;
+    font-weight: 200;
+}
+.header_pic2{
+    width: 7%;
+    margin: 32px auto;
+}
+.header_pic2 + p{
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+}
+.header_book button{
+    background-color: transparent;
+    border: solid var(--sec) 1px;
+    border-radius: 16px;
+    color: var(--sec);
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 40px 2px;
+    cursor: pointer;
+}
+
+/* modern */
+.modern{
+    background-image: url(../images/restaurant_post_bg.jpg);
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modern_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.modern_pic{
+    width: 50%;
+    margin: 24px 24px 0;
+}
+.modern_text{
+    width: 35%;
+    margin-right: 64px;
+}
+.modern_text h2{
+    color: var(--prag);
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 24px;
+}
+#modern{
+    color: var(--sec);
+    font-size: 48px;
+    font-weight: 200;
+}
+.modern_text p{
+    font-size: 6px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.modern_info{
+    border: solid var(--sec) 1px;
+    border-radius: 16px;
+    width: 30%;
+    text-align: center;
+    color: var(--sec);
+    padding: 10px 6px;
+    font-size: 10px;
+    margin: 40px 2px;
+    cursor: pointer;
+}
+.modern_info a:link{
+    color: var(--sec);
+}
+
+.modern_info a:visited{
+    color: var(--sec);
+  }
+  
+.modern_info a:hover{
+    color: rgb(255, 255, 255);
+}
+.modern_info:hover{
+    background-color: #00000094;
+}
+
+/* restaurant */
+.rest{
+    background-image: url(../images/restaurant_blackwood_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.rest_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding: 64px 0;
+}
+.rest_first{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.rest_pic{
+    width: 40%;
+    margin: 0 48px;
+}
+.rest_right_wrapper{
+    width: 50%;
+}
+.rest_right_top h2{
+    color: var(--sec);
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 24px;
+}
+#rest{
+    color: white;
+    font-size: 56px;
+    font-weight: 200;
+    margin-left: -5px;
+}
+.rest_right_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.rest_right_bottom_text{
+    width: 70%;
+}
+.rest_right_bottom_text p,ul{
+    font-size: 10px;
+    font-weight: 100;
+    margin-bottom: 32px;
+    color: white;
+}
+.rest_right_bottom_text ul{
+    margin-left: 18px;
+    list-style: circle;
+    line-height: 20px;
+}
+.rest_right_bottom_chill{
+    width: 30%;
+}
+.rest_gallery{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.rest_menu{
+    border: solid var(--sec) 1px;
+    border-radius: 16px;
+    text-align: center;
+    color: var(--sec);
+    padding: 8px 4px;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 56px 0 0;
+    display: inline-block;
+}
+.rest_menu a:link{
+    color: var(--sec);
+}
+
+.rest_menu a:visited{
+    color: var(--sec);
+  }
+  
+.rest_menu a:hover{
+    color: rgb(255, 255, 255);
+}
+.rest_menu:hover{
+    background-color: #00000094;
+}
+.hline{
+    display: grid;
+    grid-template-columns: 44% 12% 44%;
+    align-items: baseline;
+}
+/* .hline{
+    position: relative;
+}
+.hline ::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45%;
+    left:0;
+    width: 44%;
+    height: 1px;
+    background: var(--sec);
+    z-index: 1;
+}
+.hline::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45%;
+    right:0;
+    width: 44%;
+    height: 1px;
+    background: var(--sec);
+    z-index:1;
+} */
+.before {
+    display: inline-block;
+    border-top: 1px double #c6b089 ;
+    border-bottom: 1px double #c6b089;
+    padding: 1px 0px 1px 0px;
+}
+.after{
+    display: inline-block;
+    border-top: 1px double #c6b089 ;
+    border-bottom: 1px double #c6b089;
+    padding: 1px 0px 1px 0px;
+}
+
+/* offers */
+.offer{
+    background-image: url(../images/restaurant_post_bg.jpg);
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.offer_text{
+    padding: 56px 0 12px;
+    font-size: 10px;
+}
+.offer_text h3{
+    color: var(--sec);
+    font-weight: 300;
+    line-height: 1.5;
+}
+#special{
+    font-size: 18px;
+    color: var(--prag);
+    font-weight: 300;
+}
+.offer_pic{
+    width: 5%;
+    margin: 0 auto;
+}
+.offer_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 56px;
+}
+.offer_cards-unit{
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+}
+.offer_card_pic{
+    position: relative;
+}
+.overlay1 p{
+    font-size: 14px;
+    color: red;
+}
+#person{
+    font-size: 6px;
+}
+.overlay1{
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: -30;
+    left: 35%;
+    padding: 12px;
+    border-radius: 44px;
+}
+.overlay2{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+}
+.offer_card_text{
+    border-right: 1px solid rgb(236, 235, 235);
+    padding-bottom: 24px;
+}
+.offer_card_text_list{
+    line-height: 28px;
+    color: var(--prag);
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.offer_card_text_list li::before{
+    content: "\2022"; 
+    color: red;
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em;
+    padding-left: 8px;
+}
+.offer_card_text_list :nth-last-child(even){
+    background-color: rgb(236, 235, 235);
+}
+
+.offer_card_text p{
+    width: 60%;
+    color: white;
+    background-color: var(--prag);
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+/* ABOUT */
+.about{
+    background-image: url(../images/restaurant_testimonial.jpg);
+    background-position: center;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.about_text{
+    padding: 56px 0 12px;
+    font-size: 10px;
+}
+.about_text h3{
+    color: var(--sec);
+    font-weight: 300;
+    line-height: 1.5;
+}
+#say{
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+.about_pic{
+    width: 3%;
+    margin: 0 auto;
+}
+.about_slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 ;
+}
+.about_slider_arrow{
+    padding: 10px 14px;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(210, 51, 30);
+    border: none;
+}
+.about_slider_card{
+    width: 50%;
+}
+.about_slider_card_pic{
+    width: 12%;
+    margin: 20px auto;
+}
+.about_slider_card_pic img{
+    border-radius: 50%;
+}
+.about_slider_card h5{
+    color: var(--sec);
+    font-weight: 200;
+    line-height: 16px;
+    font-size: 10px;
+    margin: 16px auto;
+}
+#inc{
+    font-size: 8px;
+    color: white;
+    font-weight: 200;
+}
+.about_slider_card p{
+    color: white;
+    font-weight: 200;
+    line-height: 20px;
+    font-size: 6px;
+}
+.about_slider_card h1{
+    color: var(--sec);
+    font-weight: 300;
+    font-size: 150px;
+    margin: 0;
+    letter-spacing: -16px
+}
+/* Blog */
+.blog{
+    background-image: url(../images/restaurant_post_bg.jpg);
+    background-position: center;
+    height: 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.blog_text{
+    padding-top: 56px;
+    font-size: 10px;
+    padding-bottom: 24px;
+}
+.blog_text h3{
+    color: var(--sec);
+    font-weight: 300;
+    line-height: 1.5;
+}
+#blog{
+    font-size: 18px;
+    color: var(--prag);
+    font-weight: 300;
+}
+.blog_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 56px;
+}
+.blog_pic{
+    width: 5%;
+    margin: 0 auto;
+}
+.blog_cards-unit{
+    width: 31%;
+    background-color: rgb(255, 255, 255);
+}
+.blog_cards-unit_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.blog_cards-unit_header p{
+    font-size: 8px;
+}
+.blog_card_like{
+    color: orangered;
+}
+.blog_card_text{
+    text-align: left;
+    margin: 0 12px;
+}
+.blog_card_text h4{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+#restaurant{
+    font-weight: 300;
+}
+.blog_card_text p{
+    font-size: 8px;
+    margin-bottom: 16px;
+}
+.blog_cards-unit_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 12px;
+}
+#share{
+    font-size: 24px;
+    margin-right: 10px; 
+}
+#more{
+    border: solid red 1px;
+    border-radius: 2px;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+    padding: 3px 6px;
+    font-size: 10px;
+    cursor: pointer;
+}
+#more a:visited{
+    color: red;
+}  
+#more:hover{
+    background-color: red;
+    color: white;
+}
+.blog_cards-unit_footer a:first-child{
+    color: var(--prag);
+}
+.blog_all{
+    border: solid var(--sec) 1px;
+    border-radius: 20px;
+    width: 25%;
+    text-align: center;
+    color: var(--sec);
+    padding: 10px 6px;
+    font-size: 14px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+.blog_all a:link{
+    color: var(--sec);
+}
+.blog_all a:visited{
+    color: var(--sec);
+  }  
+.blog_all a:hover{
+    color: rgb(255, 255, 255);
+}
+.blog_all:hover{
+    background-color: #00000094;
+}
+
+/* Contact */
+.contact{
+    background-image: url(../images/restaurant_contact_information.jpg);
+    background-position: center;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.contact_text{
+    padding: 56px 0 12px;
+    font-size: 10px;
+}
+.contact_text h3{
+    color: var(--sec);
+    font-weight: 300;
+    line-height: 1.5;
+}
+#info{
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+.contact_pic{
+    width: 5%;
+    margin: 0 auto;
+}
+.contact_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 56px;
+}
+.contact_cards-unit{
+    width: 30%;
+    height: 156px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.contact_overlay{
+    text-align: center;
+    background-color:  rgb(210, 36, 30);
+    position: absolute;
+    top: -16px;
+    left: 72px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+.contact_card_text{
+    padding: 40px 8px;
+}
+.contact_card_text h5{
+    color: white;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.contact_card_text p{
+    color: white;
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+/* Booking */
+.book{
+    background-image: url(../images/restaurant_blackwood_bg.jpg);
+    background-position: center;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.book_text{
+    padding: 64px 0 12px;
+    font-size: 10px;
+}
+.book_text h3{
+    color: var(--sec);
+    font-weight: 300;
+    line-height: 1.5;
+}
+#reserve{
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+}
+.book_pic{
+    width: 5%;
+    margin: 0 auto;
+}
+.book_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0 20px;
+}
+.book_header_card{
+    position: relative;
+
+}
+.book_header_card input{
+    padding: 6px 48px 6px 8px;
+    margin: 0px;
+    font-weight: 100;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0;
+}
+.input_overlay{
+    position: absolute;
+    top: 28%;
+    right: 6%;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.295);
+    font-weight: 100;
+}
+#message{
+    width: 100%;
+    font-weight: 100;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 48px 104px 8px;
+}
+.book_message_button{
+    border: solid var(--sec) 1px;
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+    color: var(--sec);
+    padding: 8px 2px;
+    font-size: 10px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+.book_message_button a:link{
+    color: var(--sec);
+}
+.book_message_button a:visited{
+    color: var(--sec);
+  }  
+.book_message_button a:hover{
+    color: rgb(255, 255, 255);
+}
+.book_message_button:hover{
+    background-color: #00000094;
+}
+.book_footer_pic{
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* resposive of restaurabt section */
+@media only screen and (max-width: 768px) {
+    
+    /* For tablets: */
+    .container{
+        width:90%;
+    }
+    .header_pic1{
+        width: 20%;
+    }
+    .navbar_links{
+        opacity: 0;
+    }
+    .nav_burger{
+        opacity: 1;
+    }
+    .modern{
+        height: 90%;
+    }
+    .modern_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .modern_pic{
+        order: 1;
+        width: 30%;
+    }
+    .modern_text{
+        margin:  56px 0 0 0;
+        text-align: center;
+        width: 90%;
+    }
+    .modern_info{
+        margin:  0 auto;
+        text-align: center;
+        width: 20%;
+    }
+    .rest_first{
+        display: flex;
+        flex-direction: column;
+    }
+    .rest_pic{
+        order: 2;
+        width: 80%;
+    }
+    .rest_right_wrapper{
+        order: 1;
+        text-align: center;
+        width: 80%;
+        margin: 0;
+    }
+    .rest_list{
+        text-align: left;
+    }
+    .rest_gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .hline{
+        grid-template-columns: 40% 20% 40%;
+    }
+    .about_slider_card{
+        width: 80%;
+    }
+    .blog{
+        height: 120%;
+    }
+    .book_footer_pic{
+        width: 32.2%;
+    }
+
+  }
